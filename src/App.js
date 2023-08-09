@@ -15,9 +15,12 @@ function App() {
       phone: '8521234567'
     }
   ]
+  const deletHandler=()=>{
+    alert('clicked');
+  }
   return (
     <div className='card'>
-      <Header heading="phone  directory"/>
+      <Header heading="phone  directory" />
       <div className='content'>
         <button className='button'>Add</button>
         <div className='card-content heading-container '>
@@ -28,12 +31,10 @@ function App() {
           sub.map(sub => {
             return (
               <div className='card-content' key={sub.id}>
-                
                 <span className="grid-item">{sub.name}</span>
                 <span className="grid-item">{sub.phone}</span>
-                
                 <span className="grid-item action-btn-container">
-                  <button className="custom-btn delete-btn">Delete</button>
+                <button className="custom-btn delete-btn" onClick={deletHandler}>Delete</button>
                 </span>
               </div>
             )
