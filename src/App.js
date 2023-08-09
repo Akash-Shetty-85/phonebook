@@ -4,12 +4,14 @@ import Header from './Header';
 
 function App() {
   return (
-    <div>
+    <div className='card'>
       <Header/>
-      <button>Add</button>
-      <div>
-        <span>Name</span><br/>
-        <span>Phone</span>
+      <div className='content'>
+      <button className='button'>Add</button>
+      <div className='card-content heading-container '>
+        <span className='name content-info'>Name</span><br/>
+        <span className='number content-info'>Phone</span>
+      </div>
       </div>
     </div>
    );
