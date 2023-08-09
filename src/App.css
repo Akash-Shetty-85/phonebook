@@ -23,7 +23,7 @@
 
 .card-content {
   display: grid;
-  grid-template-columns: 40% 30% auto;
+  grid-template-columns: 40% 10% auto;
   margin-bottom: 10px;
 }
 
@@ -41,4 +41,8 @@
   padding-right: 10px;
   color: #808080;
   text-transform: uppercase;
+}
+.delete-btn {
+  background: #fa9c9c;
+  color: #000;
 }
